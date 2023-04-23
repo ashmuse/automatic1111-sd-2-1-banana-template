@@ -11,9 +11,9 @@ CHUNK_SIZE = 1024 * 1024
 
 def get_filename(model_url, id="model"):
     if '.safetensors' in model_url:
-        return 'models/Stable-diffusion/' + id + '.safetensors'
+        return 'models/Stable-diffusion/'
     else:
-        return 'models/Stable-diffusion/' + id + '.ckpt'
+        return 'models/Stable-diffusion/'
 
 def check_model_file(filename):
     file_size_mb = round(os.path.getsize(filename) / (1024 * 1024))
